@@ -1,0 +1,15 @@
+{
+  "name": "vdanggre/328/students",
+  "authors": [
+    {
+      "name": "Vuong Dang",
+      "email": "Dang.Vuong@student.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  },
+  "autoload": {
+    "classmap": ["classes/", "model/", "controllers/"]
+  }
+}
