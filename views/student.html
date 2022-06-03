@@ -1,0 +1,29 @@
+<include href="views/header.html"></include>
+<body>
+<div class="container">
+    <h1>My Diner</h1>
+    <h2>Order Summary</h2>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-6">
+                <form>
+                    <div class="form-group" id="group">
+
+                        <p class="form-control">SID: {{ @SESSION.order->getSid }}</p>
+                        <p class="form-control">Last: {{ @SESSION.order->getLast }}</p>
+                        <p class="form-control">First: {{ @SESSION.order->getFirst }}</p>
+                        <p class="form-control">Birthdate: {{ @SESSION.order->getBirthdate }}</p>
+                        <p class="form-control">Gpa: {{ @SESSION.order->getGpa }}</p>
+                        <p class="form-control">Advisor: {{ @SESSION.order->getAdvisor }}</p>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <a href="{{ @BASE }}">Return to Home</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<include href="views/header.html"></include>
+<body>
+    <div class="container">
+        <h2>Student Page</h2>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Last</th>
+                <th>First</th>
+            </tr>
+        <repeat group="{{ @orders }}" value="{{ @order }}">
+            <tr>
+                <td>1</td>
+                <td> {{ @order['last'] }}</td>
+                <td> {{ @order['first'] }}</td>
+            </tr>
+        </repeat>
+        </table>
+        <a href="{{ @BASE }}">Return to Home</a>
+    </div>
+</body>
+</html>
